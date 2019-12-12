@@ -55,5 +55,27 @@ extension EntryViewController {
     }
 }
 
+// MARK: - Layouts
 
+extension EntryViewController {
+    private func setUpConstraints() {
+        logoImage.snp.makeConstraints {
+            $0.width.equalTo(self.view.snp.width).dividedBy(3)
+            $0.height.equalTo(logoImage.snp.width).multipliedBy(147.0/97.0)
+            $0.top.equalToSuperview().offset(96)
+            $0.leading.equalToSuperview().offset(24)
+        }
+        
+        guideLabel.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(startButton.snp.top).offset(-100)
+        }
+        
+        startButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(126)
+            $0.height.equalTo(48)
+            $0.bottom.equalToSuperview().inset(100)
+        }
+    }
 }
