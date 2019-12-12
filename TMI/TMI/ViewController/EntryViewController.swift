@@ -7,24 +7,53 @@
 //
 
 import UIKit
+import SnapKit
+import Then
 
 class EntryViewController: UIViewController {
 
+    // MARK: - UI
+    
+    let logoImage = UIImageView()
+    let guideLabel = UILabel()
+    let startButton = UIButton()
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setUpAttributes()
+        setUpConstraints()
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
+// MARK: - Attributes
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension EntryViewController {
+    private func setUpAttributes() {
+        self.view.do {
+            $0.addSubview(logoImage)
+            $0.addSubview(guideLabel)
+            $0.addSubview(startButton)
+        }
+        
+        logoImage.do {
+            $0.backgroundColor = .gray
+        }
+        
+        guideLabel.do {
+            $0.text = "사진을 정리해드릴까요?"
+            $0.font = .boldSystemFont(ofSize: 17)
+        }
+        
+        startButton.do {
+            $0.setTitle("시작", for: .normal)
+            $0.setTitleColor(.white, for: .normal)
+            $0.backgroundColor = .black
+            $0.layer.cornerRadius = 24
+        }
     }
-    */
+}
+
 
 }
