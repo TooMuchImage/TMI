@@ -8,10 +8,22 @@
 
 import UIKit
 
-class AlbumView: UIView {
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
+class AlbumCell: UICollectionViewCell {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
-        self.backgroundColor = .black
+        self.contentView.backgroundColor = .neonBlue
+    }
+    
+    init() {
+        super.init(frame: .zero)
+        
+        self.contentView.backgroundColor = .neonBlue
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        self.contentView.backgroundColor = .neonBlue
     }
 }
