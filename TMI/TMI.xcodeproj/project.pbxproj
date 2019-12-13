@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E160C9823A3A850000CA518 /* SnapKit+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160C9723A3A850000CA518 /* SnapKit+.swift */; };
+		0E7D3E7723A2AC3700269288 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D3E7623A2AC3700269288 /* EntryViewController.swift */; };
 		0EB548CE239C391B00C88B1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB548CD239C391B00C88B1D /* Colors.xcassets */; };
 		0EB548D3239C3AE800C88B1D /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB548D2239C3AE800C88B1D /* UIColor+.swift */; };
 		A5F9CEBD41F15AF64CF31F04 /* Pods_TMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DF7231FAEDE69ADF4FB56A /* Pods_TMI.framework */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E160C9723A3A850000CA518 /* SnapKit+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapKit+.swift"; sourceTree = "<group>"; };
+		0E7D3E7623A2AC3700269288 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		0EB548CD239C391B00C88B1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0EB548D2239C3AE800C88B1D /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		59DF7231FAEDE69ADF4FB56A /* Pods_TMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7D3E7123A2ABD600269288 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E7D3E7323A2AC0600269288 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D3E7623A2AC3700269288 /* EntryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0E7D3E7523A2AC1700269288 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0EB548CC239C38FA00C88B1D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB548D2239C3AE800C88B1D /* UIColor+.swift */,
+				0E160C9723A3A850000CA518 /* SnapKit+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -75,7 +102,6 @@
 				6E87530969830F8BFF9EA4D2 /* Pods-TMI.debug.xcconfig */,
 				F15C6F82D213AC3C5180F5D5 /* Pods-TMI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -108,6 +134,9 @@
 		FAA2D5CC238FBC74001E71C3 /* TMI */ = {
 			isa = PBXGroup;
 			children = (
+				0E7D3E7523A2AC1700269288 /* ViewModel */,
+				0E7D3E7323A2AC0600269288 /* ViewController */,
+				0E7D3E7123A2ABD600269288 /* View */,
 				0EB548D0239C3AA600C88B1D /* Utilities */,
 				0EB548CC239C38FA00C88B1D /* Resource */,
 				FAA2D5CD238FBC74001E71C3 /* AppDelegate.swift */,
@@ -236,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA2D5D2238FBC74001E71C3 /* ViewController.swift in Sources */,
+				0E160C9823A3A850000CA518 /* SnapKit+.swift in Sources */,
+				0E7D3E7723A2AC3700269288 /* EntryViewController.swift in Sources */,
 				FAA2D5CE238FBC74001E71C3 /* AppDelegate.swift in Sources */,
 				0EB548D3239C3AE800C88B1D /* UIColor+.swift in Sources */,
 			);
