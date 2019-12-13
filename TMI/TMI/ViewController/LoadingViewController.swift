@@ -90,7 +90,7 @@ extension LoadingViewController {
         
         gaugeView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(messageLabel.snp.bottom).offset(self.view.bounds.height * 3/100)
+            $0.top.equalToSuperview().offset(self.view.bounds.height * 57/100)
             $0.width.equalToSuperview().inset(self.view.bounds.width * 6/100)
             $0.height.equalToSuperview().dividedBy(100)
         }
