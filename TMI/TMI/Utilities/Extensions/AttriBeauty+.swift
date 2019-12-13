@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import AttriBeauty
+
+
+extension String {
+    var beautfiy: BeautifulString {
+        return BeautifulString(string: self)
+    }
+}
