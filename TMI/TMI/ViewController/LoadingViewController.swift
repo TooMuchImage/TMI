@@ -7,24 +7,40 @@
 //
 
 import UIKit
+import SnapKit
+import Then
 
 class LoadingViewController: UIViewController {
 
+    // MARK: - UI
+    
+    let logoImageView = UIImageView()
+    let loadingImageView = UIImageView()
+    let messageLabel = UILabel()
+    let gaugeView = UIView()
+    let gaugeLabel = UILabel()
+     
+    // MARK: - Properties
+    
+    // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
+// MARK: - Attributes
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension LoadingViewController {
+    private func setUpAttributes() {
+        
     }
-    */
+}
 
+// MARK: - Layouts
+
+extension LoadingViewController {
+    private func setUpConstraints() {
+        
+    }
 }
