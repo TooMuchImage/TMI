@@ -58,4 +58,13 @@ extension GaugeView {
     }
 }
 
+// MARK: - Configure
+
+extension GaugeView {
+    func configure(percent: CGFloat) {
+        filedView.snp.remakeConstraints {
+            $0.leading.top.bottom.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(percent)
+        }
+    }
 }
