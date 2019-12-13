@@ -21,20 +21,17 @@ class GaugeView: UIView {
         super.init(frame: frame)
         
         setUpAttributes()
+        setUpConstraints()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
         setUpAttributes()
+        setUpConstraints()
     }
 }
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
 // MARK: - Attributes
 
 extension GaugeView {
@@ -50,5 +47,15 @@ extension GaugeView {
     }
 }
 
+// MARK: - Layouts
+
+extension GaugeView {
+    private func setUpConstraints() {
+        filedView.snp.makeConstraints {
+            $0.leading.top.bottom.equalToSuperview()
+            $0.width.equalToSuperview().multipliedBy(0)
+        }
+    }
+}
 
 }
