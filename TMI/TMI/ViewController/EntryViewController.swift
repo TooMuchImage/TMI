@@ -14,11 +14,12 @@ class EntryViewController: UIViewController {
 
     // MARK: - UI
     
-    let logoImage = UIImageView()
+    let logoImageView = UIImageView()
     let guideLabel = UILabel()
     let startButton = UIButton()
     
     // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,12 +33,12 @@ class EntryViewController: UIViewController {
 extension EntryViewController {
     private func setUpAttributes() {
         self.view.do {
-            $0.addSubview(logoImage)
+            $0.addSubview(logoImageView)
             $0.addSubview(guideLabel)
             $0.addSubview(startButton)
         }
         
-        logoImage.do {
+        logoImageView.do {
             $0.backgroundColor = .gray
         }
         
@@ -59,9 +60,9 @@ extension EntryViewController {
 
 extension EntryViewController {
     private func setUpConstraints() {
-        logoImage.snp.makeConstraints {
+        logoImageView.snp.makeConstraints {
             $0.width.equalTo(self.view.snp.width).dividedBy(3)
-            $0.height.equalTo(logoImage.snp.width).multipliedBy(147.0/97.0)
+            $0.height.equalTo(logoImageView.snp.width).multipliedBy(147.0/97.0)
             $0.top.equalToSuperview().offset(96)
             $0.leading.equalToSuperview().offset(24)
         }
