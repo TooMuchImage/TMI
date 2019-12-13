@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0E160C9823A3A850000CA518 /* SnapKit+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160C9723A3A850000CA518 /* SnapKit+.swift */; };
+		0E160CA623A40AD2000CA518 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160CA523A40AD2000CA518 /* AlbumCell.swift */; };
+		0E160CA823A40B16000CA518 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160CA723A40B16000CA518 /* MainViewController.swift */; };
+		0E160CAA23A40E73000CA518 /* AttriBeauty+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160CA923A40E73000CA518 /* AttriBeauty+.swift */; };
+		0E160CAC23A41733000CA518 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160CAB23A41733000CA518 /* Reusable.swift */; };
 		0E7D3E7723A2AC3700269288 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D3E7623A2AC3700269288 /* EntryViewController.swift */; };
 		0EB548CE239C391B00C88B1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB548CD239C391B00C88B1D /* Colors.xcassets */; };
 		0EB548D3239C3AE800C88B1D /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB548D2239C3AE800C88B1D /* UIColor+.swift */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		0E160C9723A3A850000CA518 /* SnapKit+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapKit+.swift"; sourceTree = "<group>"; };
+		0E160CA523A40AD2000CA518 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		0E160CA723A40B16000CA518 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0E160CA923A40E73000CA518 /* AttriBeauty+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttriBeauty+.swift"; sourceTree = "<group>"; };
+		0E160CAB23A41733000CA518 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		0E7D3E7623A2AC3700269288 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		0EB548CD239C391B00C88B1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0EB548D2239C3AE800C88B1D /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -51,6 +59,7 @@
 		0E7D3E7123A2ABD600269288 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0E160CA523A40AD2000CA518 /* AlbumCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -59,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7D3E7623A2AC3700269288 /* EntryViewController.swift */,
+				0E160CA723A40B16000CA518 /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -92,6 +102,8 @@
 			children = (
 				0EB548D2239C3AE800C88B1D /* UIColor+.swift */,
 				0E160C9723A3A850000CA518 /* SnapKit+.swift */,
+				0E160CA923A40E73000CA518 /* AttriBeauty+.swift */,
+				0E160CAB23A41733000CA518 /* Reusable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,10 +276,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E160CA823A40B16000CA518 /* MainViewController.swift in Sources */,
+				0E160CA623A40AD2000CA518 /* AlbumCell.swift in Sources */,
 				FAA2D5D2238FBC74001E71C3 /* ViewController.swift in Sources */,
+				0E160CAC23A41733000CA518 /* Reusable.swift in Sources */,
 				0E160C9823A3A850000CA518 /* SnapKit+.swift in Sources */,
 				0E7D3E7723A2AC3700269288 /* EntryViewController.swift in Sources */,
 				FAA2D5CE238FBC74001E71C3 /* AppDelegate.swift in Sources */,
+				0E160CAA23A40E73000CA518 /* AttriBeauty+.swift in Sources */,
 				0EB548D3239C3AE800C88B1D /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
