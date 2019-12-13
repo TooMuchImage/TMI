@@ -57,15 +57,12 @@ extension LoadingViewController {
             $0.textAlignment = .center
         }
         
-        gaugeView.do {
-            $0.backgroundColor = .neonBlue
-        }
-        
         gaugeLabel.do {
-            $0.text = "20%"
             $0.font = .systemFont(ofSize: 14)
             $0.textAlignment = .center
         }
+        
+        configure(percent: 0.5)
     }
 }
 
@@ -104,6 +101,15 @@ extension LoadingViewController {
         }
     }
 }
+
+// MARK: - Configure
+
+extension LoadingViewController {
+    
+    private func configure(percent: CGFloat) {
+        guard percent <= 1 else { return }
         
+        gaugeView.configure(percent: percent)
+        gaugeLabel.text = "\(Int(percent*100))%"
     }
 }
