@@ -53,6 +53,10 @@ extension AlbumCell {
         titleImageView.do {
             $0.backgroundColor = .gray
             $0.layer.cornerRadius = 8
+            $0.layer.shadowOffset = CGSize(width: 5, height: 5)
+            $0.layer.shadowRadius = 5
+            $0.layer.shadowColor = UIColor.black.cgColor
+            $0.layer.shadowOpacity = 0.2
         }
         
         titleLabel.do {
@@ -87,12 +91,12 @@ extension AlbumCell {
         
         titleLabel.snp.makeConstraints {
             $0.leading.trailing.equalTo(titleImageView)
-            $0.top.equalTo(titleImageView.snp.bottom)
+            $0.top.equalTo(titleImageView.snp.bottom).offset(8)
         }
         
         countLabel.snp.makeConstraints {
             $0.leading.trailing.equalTo(titleImageView)
-            $0.top.equalTo(titleLabel.snp.bottom)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(2)
         }
     }
 }
