@@ -18,4 +18,19 @@ class MainViewController: UIView {
     }
     */
 
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let side = (UIScreen.main.bounds.width - 30)/2
+        return CGSize(width: side, height: side * 30.0/24.0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let width = UIScreen.main.bounds.width
+        return CGSize(width: width, height: 150)
+    }
 }
