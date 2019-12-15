@@ -100,7 +100,3 @@ extension AlbumCell {
         }
     }
 }
-
-// MARK: - Reusable
-
-extension AlbumCell: Reusable {}

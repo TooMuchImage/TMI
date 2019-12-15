@@ -114,7 +114,3 @@ extension AlbumHeaderView {
         
     }
 }
-
-// MARK: - Reusable
-
-extension AlbumHeaderView: Reusable {}
