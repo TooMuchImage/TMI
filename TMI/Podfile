@@ -7,5 +7,6 @@ target 'TMI' do
 
   pod 'SnapKit', '~> 5.0.0'
   pod 'Then'
+  pod 'AttriBeauty'
 
 end

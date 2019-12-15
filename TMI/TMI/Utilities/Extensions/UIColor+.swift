@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    static let neonBlue = UIColor(named: "neonBlue")
-    static let loadingCyan = UIColor(named: "loadingCyan")
-    static let loadingGray = UIColor(named: "loadingGray")
+    static let neonBlue = UIColor(named: "neonBlue")!
+    static let loadingCyan = UIColor(named: "loadingCyan")!
+    static let loadingGray = UIColor(named: "loadingGray")!
 }
