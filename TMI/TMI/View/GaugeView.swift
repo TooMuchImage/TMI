@@ -12,7 +12,7 @@ class GaugeView: UIView {
     
     // MARK: - UI
     
-    private let filedView = UIView()
+    private let progressView = UIView()
     
     
     // MARK: - Initializer
@@ -37,11 +37,11 @@ class GaugeView: UIView {
 extension GaugeView {
     private func setUpAttributes() {
         self.do {
-            $0.addSubview(filedView)
+            $0.addSubview(progressView)
             $0.backgroundColor = .loadingGray
         }
         
-        filedView.do {
+        progressView.do {
             $0.backgroundColor = .loadingCyan
         }
     }
@@ -51,7 +51,7 @@ extension GaugeView {
 
 extension GaugeView {
     private func setUpConstraints() {
-        filedView.snp.makeConstraints {
+        progressView.snp.makeConstraints {
             $0.leading.top.bottom.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(0)
         }
@@ -62,7 +62,7 @@ extension GaugeView {
 
 extension GaugeView {
     func configure(percent: CGFloat) {
-        filedView.snp.remakeConstraints {
+        progressView.snp.remakeConstraints {
             $0.leading.top.bottom.equalToSuperview()
             $0.width.equalToSuperview().multipliedBy(percent)
         }
