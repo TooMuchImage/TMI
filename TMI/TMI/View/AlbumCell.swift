@@ -61,7 +61,7 @@ extension AlbumCell {
         
         titleLabel.do {
             $0.attributedText = ["Instagram", "Facebook", "KakaoTalk"].randomElement()?
-                .beautfiy
+                .beautify
                 .attriBeauty
                 .font(.systemFont(ofSize: 16))
                 .align(.left)
@@ -70,7 +70,7 @@ extension AlbumCell {
         
         countLabel.do {
             $0.attributedText = Int.random(in: 0...300).description
-                .beautfiy
+                .beautify
                 .attriBeauty
                 .font(.systemFont(ofSize: 14))
                 .fgColor(.lightGray)

@@ -65,7 +65,7 @@ extension AlbumHeaderView {
         
         message1Label.do{
             $0.attributedText = "602개의 스크린샷을"
-                .beautfiy
+                .beautify
                 .attriBeauty
                 .fgColor(.black)
                 .fgColor(.neonBlue).regex("[0-9+]+개")
@@ -75,7 +75,7 @@ extension AlbumHeaderView {
         
         message2Label.do{
             $0.attributedText = "정리해드렸어요"
-                .beautfiy
+                .beautify
                 .attriBeauty
                 .fgColor(.black)
                 .font(.boldSystemFont(ofSize: 23))

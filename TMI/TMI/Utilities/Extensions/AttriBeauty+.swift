@@ -11,7 +11,7 @@ import AttriBeauty
 
 
 extension String {
-    var beautfiy: BeautifulString {
+    var beautify: BeautifulString {
         return BeautifulString(string: self)
     }
 }
