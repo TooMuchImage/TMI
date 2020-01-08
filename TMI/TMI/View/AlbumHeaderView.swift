@@ -68,7 +68,7 @@ extension AlbumHeaderView {
                 .beautify
                 .attriBeauty
                 .fgColor(.black)
-                .fgColor(.neonBlue).regex("[0-9+]+개")
+                .fgColor(App.Color.neonBlue).regex("[0-9+]+개")
                 .font(.boldSystemFont(ofSize: 23))
                 .apply()
         }

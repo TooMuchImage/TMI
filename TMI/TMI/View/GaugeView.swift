@@ -38,11 +38,11 @@ extension GaugeView {
     private func setUpAttributes() {
         self.do {
             $0.addSubview(progressView)
-            $0.backgroundColor = .loadingGray
+            $0.backgroundColor = App.Color.gray400
         }
         
         progressView.do {
-            $0.backgroundColor = .loadingCyan
+            $0.backgroundColor = App.Color.neonCyan
         }
     }
 }
