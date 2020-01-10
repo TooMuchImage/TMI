@@ -39,11 +39,11 @@ class LoadingViewController: BaseViewController {
     // MARK: - Attributes
     override func setUpAttribute() {
         logoImageView.do {
-            $0.backgroundColor = .gray
+            $0.image = App.Image.logoBar
         }
         
         loadingImageView.do {
-            $0.backgroundColor = .gray
+            $0.image = App.Image.folder
         }
         
         messageLabel.do {
@@ -73,15 +73,15 @@ class LoadingViewController: BaseViewController {
         
         logoImageView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalToSuperview().offset(self.view.bounds.height * 4/100)
-            $0.height.equalTo(self.view.bounds.height * 5/100)
+            $0.top.equalToSuperview().offset(self.view.bounds.height * 6.0/100.0)
+            $0.height.equalTo(self.view.bounds.height * 5.0/100.0)
             $0.width.equalTo(logoImageView.snp.height)
         }
         
         loadingImageView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.width.equalToSuperview().dividedBy(3)
-            $0.top.equalToSuperview().inset(self.view.bounds.height * 1/4)
+            $0.width.equalToSuperview().dividedBy(3.0)
+            $0.top.equalToSuperview().inset(self.view.bounds.height * 1.0/4.0)
             $0.width.equalTo(loadingImageView.snp.height)
         }
         
@@ -91,14 +91,14 @@ class LoadingViewController: BaseViewController {
         
         gaugeView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalToSuperview().offset(self.view.bounds.height * 57/100)
-            $0.width.equalToSuperview().inset(self.view.bounds.width * 6/100)
+            $0.top.equalToSuperview().offset(self.view.bounds.height * 57.0/100.0)
+            $0.width.equalToSuperview().inset(self.view.bounds.width * 6.0/100.0)
             $0.height.equalToSuperview().dividedBy(100)
         }
         
         gaugeLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(gaugeView.snp.bottom).offset(self.view.bounds.height * 2/100)
+            $0.top.equalTo(gaugeView.snp.bottom).offset(self.view.bounds.height * 2.0/100.0)
         }
     }
 }
