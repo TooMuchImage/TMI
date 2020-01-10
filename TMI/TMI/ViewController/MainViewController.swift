@@ -11,33 +11,37 @@ import SnapKit
 import Then
 import AttriBeauty
 
-class MainViewController: UIViewController {
+class MainViewController: ViewController {
     
     // MARK: - UI
     
     private let albumsCollectionView = UICollectionView(frame: .zero,
                                                         collectionViewLayout: .init())
     
+    // MARK: - Initialization
+    
+    override func initialization() {
+        super.initialization()
+        
+        setUpLayout()
+        setUpAttribute()
+    }
+    
     // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUpAttributes()
-        setUpConstraints()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
     }
-}
-
-// MARK: - Attributes
-
-extension MainViewController {
-    private func setUpAttributes() {
-        self.view.addSubview(albumsCollectionView)
-        
+    
+    
+    // MARK: - Attributes
+    
+    override func setUpAttribute() {
         albumsCollectionView.do {
             $0.dataSource = self
             $0.delegate = self
@@ -52,12 +56,13 @@ extension MainViewController {
             }
         }
     }
-}
-
-// MARK: - Layouts
-
-extension MainViewController {
-    private func setUpConstraints() {
+    
+    
+    // MARK: - Layouts
+    
+    override func setUpLayout() {
+        self.view.addSubview(albumsCollectionView)
+        
         albumsCollectionView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }

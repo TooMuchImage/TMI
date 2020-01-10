@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-class LoadingViewController: UIViewController {
+class LoadingViewController: ViewController {
     
     // MARK: - UI
     
@@ -20,27 +20,24 @@ class LoadingViewController: UIViewController {
     let gaugeView = GaugeView()
     let gaugeLabel = UILabel()
     
+    // MARK: - Initialization
+    
+    override func initialization() {
+        super.initialization()
+        
+        setUpLayout()
+        setUpAttribute()
+    }
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUpAttributes()
-        setUpConstraints()
     }
-}
-
-// MARK: - Attributes
-
-extension LoadingViewController {
-    private func setUpAttributes() {
-        self.view.addSubviews(logoImageView,
-                              loadingImageView,
-                              messageLabel,
-                              gaugeView,
-                              gaugeLabel)
-        
-        
+    
+    
+    // MARK: - Attributes
+    override func setUpAttribute() {
         logoImageView.do {
             $0.backgroundColor = .gray
         }
@@ -63,12 +60,17 @@ extension LoadingViewController {
         
         configure(percent: 0.5)
     }
-}
-
-// MARK: - Layouts
-
-extension LoadingViewController {
-    private func setUpConstraints() {
+    
+    
+    // MARK: - Layouts
+    
+    override func setUpLayout() {
+        self.view.addSubviews(logoImageView,
+                              loadingImageView,
+                              messageLabel,
+                              gaugeView,
+                              gaugeLabel)
+        
         logoImageView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalToSuperview().offset(self.view.bounds.height * 4/100)
