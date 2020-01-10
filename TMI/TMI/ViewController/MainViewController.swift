@@ -36,9 +36,7 @@ class MainViewController: UIViewController {
 
 extension MainViewController {
     private func setUpAttributes() {
-        self.view.do {
-            $0.addSubview(albumsCollectionView)
-        }
+        self.view.addSubview(albumsCollectionView)
         
         albumsCollectionView.do {
             $0.dataSource = self

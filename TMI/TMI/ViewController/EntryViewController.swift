@@ -11,7 +11,7 @@ import SnapKit
 import Then
 
 class EntryViewController: UIViewController {
-
+    
     // MARK: - UI
     
     let logoImageView = UIImageView()
@@ -22,7 +22,7 @@ class EntryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpAttributes()
         setUpConstraints()
     }
@@ -32,11 +32,9 @@ class EntryViewController: UIViewController {
 
 extension EntryViewController {
     private func setUpAttributes() {
-        self.view.do {
-            $0.addSubview(logoImageView)
-            $0.addSubview(guideLabel)
-            $0.addSubview(startButton)
-        }
+        self.view.addSubviews(logoImageView,
+                              guideLabel,
+                              startButton)
         
         logoImageView.do {
             $0.backgroundColor = .gray

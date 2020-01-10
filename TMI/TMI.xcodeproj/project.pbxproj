@@ -18,6 +18,7 @@
 		0E160CC323A56FEA000CA518 /* AlbumHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E160CC223A56FEA000CA518 /* AlbumHeaderView.swift */; };
 		0E7D3E7723A2AC3700269288 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7D3E7623A2AC3700269288 /* EntryViewController.swift */; };
 		0EB548CE239C391B00C88B1D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EB548CD239C391B00C88B1D /* Colors.xcassets */; };
+		0EDB40EB23C7FDD60020B0EF /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDB40EA23C7FDD60020B0EF /* UIView+.swift */; };
 		A5F9CEBD41F15AF64CF31F04 /* Pods_TMI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DF7231FAEDE69ADF4FB56A /* Pods_TMI.framework */; };
 		FAA2D5CE238FBC74001E71C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2D5CD238FBC74001E71C3 /* AppDelegate.swift */; };
 		FAA2D5D2238FBC74001E71C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2D5D1238FBC74001E71C3 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		0E160CC223A56FEA000CA518 /* AlbumHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumHeaderView.swift; sourceTree = "<group>"; };
 		0E7D3E7623A2AC3700269288 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		0EB548CD239C391B00C88B1D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		0EDB40EA23C7FDD60020B0EF /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		59DF7231FAEDE69ADF4FB56A /* Pods_TMI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E87530969830F8BFF9EA4D2 /* Pods-TMI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMI.debug.xcconfig"; path = "Target Support Files/Pods-TMI/Pods-TMI.debug.xcconfig"; sourceTree = "<group>"; };
 		F15C6F82D213AC3C5180F5D5 /* Pods-TMI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMI.release.xcconfig"; path = "Target Support Files/Pods-TMI/Pods-TMI.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				0E160CA923A40E73000CA518 /* AttriBeauty+.swift */,
 				0E160CAB23A41733000CA518 /* Reusable.swift */,
 				0E160CC023A55688000CA518 /* UICollectionView+.swift */,
+				0EDB40EA23C7FDD60020B0EF /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				0E160CA823A40B16000CA518 /* MainViewController.swift in Sources */,
 				0E160CA623A40AD2000CA518 /* AlbumCell.swift in Sources */,
+				0EDB40EB23C7FDD60020B0EF /* UIView+.swift in Sources */,
 				FAA2D5D2238FBC74001E71C3 /* ViewController.swift in Sources */,
 				FAA7EF5823C5CD6A00A9BDF1 /* AppStyle.swift in Sources */,
 				0E160CAC23A41733000CA518 /* Reusable.swift in Sources */,
