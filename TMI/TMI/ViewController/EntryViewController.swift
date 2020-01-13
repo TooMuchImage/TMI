@@ -37,7 +37,7 @@ class EntryViewController: BaseViewController {
     
     override func setUpAttribute() {
         logoImageView.do {
-            $0.backgroundColor = .gray
+            $0.image = App.Image.logoSplash
         }
         
         guideLabel.do {

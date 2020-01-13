@@ -22,22 +22,24 @@ class AlbumHeaderView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setUpAttributes()
-        setUpConstraints()
+        initialization()
     }
     
     convenience init() {
         self.init(frame: .zero)
         
-        setUpAttributes()
-        setUpConstraints()
+        initialization()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        setUpAttributes()
-        setUpConstraints()
+        initialization()
+    }
+    
+    func initialization() {
+        setUpLayout()
+        setUpAttribute()
     }
     
     // MARK: - Life Cycle
@@ -56,12 +58,7 @@ class AlbumHeaderView: UICollectionReusableView {
 // MARK: - Attributes
 
 extension AlbumHeaderView {
-    private func setUpAttributes() {
-        self.do {
-            $0.addSubview(message1Label)
-            $0.addSubview(message2Label)
-            $0.addSubview(refreshButton)
-        }
+    private func setUpAttribute() {
         
         message1Label.do{
             $0.attributedText = "602개의 스크린샷을"
@@ -84,6 +81,7 @@ extension AlbumHeaderView {
         
         refreshButton.do {
             $0.backgroundColor = .black
+            $0.setBackgroundImage(App.Icon.reset, for: .normal)
         }
     }
 }
@@ -91,7 +89,9 @@ extension AlbumHeaderView {
 // MARK: - Layouts
 
 extension AlbumHeaderView {
-    private func setUpConstraints() {
+    private func setUpLayout() {
+        self.addSubviews(message1Label, message2Label, refreshButton)
+        
         message1Label.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(self.bounds.width * 4/100)
             $0.top.equalToSuperview().offset(self.bounds.height * 40/100)
