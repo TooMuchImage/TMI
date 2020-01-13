@@ -11,7 +11,7 @@ import SnapKit
 import Then
 
 class LoadingViewController: UIViewController {
-
+    
     // MARK: - UI
     
     let logoImageView = UIImageView()
@@ -34,13 +34,12 @@ class LoadingViewController: UIViewController {
 
 extension LoadingViewController {
     private func setUpAttributes() {
-        self.view.do {
-            $0.addSubview(logoImageView)
-            $0.addSubview(loadingImageView)
-            $0.addSubview(messageLabel)
-            $0.addSubview(gaugeView)
-            $0.addSubview(gaugeLabel)
-        }
+        self.view.addSubviews(logoImageView,
+                              loadingImageView,
+                              messageLabel,
+                              gaugeView,
+                              gaugeLabel)
+        
         
         logoImageView.do {
             $0.backgroundColor = .gray
