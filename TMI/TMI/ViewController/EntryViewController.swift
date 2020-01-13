@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-class EntryViewController: UIViewController {
+class EntryViewController: BaseViewController {
     
     // MARK: - UI
     
@@ -18,24 +18,24 @@ class EntryViewController: UIViewController {
     let guideLabel = UILabel()
     let startButton = UIButton()
     
+    // MARK: - Initialization
+    
+    override func initialize() {
+        super.initialize()
+        
+        setUpLayout()
+        setUpAttribute()
+    }
+    
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUpAttributes()
-        setUpConstraints()
     }
-}
-
-// MARK: - Attributes
-
-extension EntryViewController {
-    private func setUpAttributes() {
-        self.view.addSubviews(logoImageView,
-                              guideLabel,
-                              startButton)
-        
+    
+    // MARK: - Attributes
+    
+    override func setUpAttribute() {
         logoImageView.do {
             $0.backgroundColor = .gray
         }
@@ -52,12 +52,14 @@ extension EntryViewController {
             $0.layer.cornerRadius = 24
         }
     }
-}
-
-// MARK: - Layouts
-
-extension EntryViewController {
-    private func setUpConstraints() {
+    
+    
+    // MARK: - Layouts
+    override func setUpLayout() {
+        self.view.addSubviews(logoImageView,
+                              guideLabel,
+                              startButton)
+        
         logoImageView.snp.makeConstraints {
             $0.width.equalTo(self.view.safeAreaLayoutGuide).dividedBy(3)
             $0.height.equalTo(logoImageView.snp.width).aspectRatio(147,97)
