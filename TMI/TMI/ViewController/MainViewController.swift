@@ -11,7 +11,7 @@ import SnapKit
 import Then
 import AttriBeauty
 
-class MainViewController: ViewController {
+class MainViewController: BaseViewController {
     
     // MARK: - UI
     
@@ -20,8 +20,8 @@ class MainViewController: ViewController {
     
     // MARK: - Initialization
     
-    override func initialization() {
-        super.initialization()
+    override func initialize() {
+        super.initialize()
         
         setUpLayout()
         setUpAttribute()

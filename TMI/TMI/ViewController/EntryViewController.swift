@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-class EntryViewController: ViewController {
+class EntryViewController: BaseViewController {
     
     // MARK: - UI
     
@@ -20,8 +20,8 @@ class EntryViewController: ViewController {
     
     // MARK: - Initialization
     
-    override func initialization() {
-        super.initialization()
+    override func initialize() {
+        super.initialize()
         
         setUpLayout()
         setUpAttribute()

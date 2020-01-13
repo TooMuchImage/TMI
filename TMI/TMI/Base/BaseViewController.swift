@@ -8,23 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BaseViewController: UIViewController {
     
     // MARK: - Initialization
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
-        initialization()
+        initialize()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         
-        initialization()
+        initialize()
     }
     
-    func initialization() {}
+    func initialize() {}
     
     // MARK: - LifeCycle
     

@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-class LoadingViewController: ViewController {
+class LoadingViewController: BaseViewController {
     
     // MARK: - UI
     
@@ -22,8 +22,8 @@ class LoadingViewController: ViewController {
     
     // MARK: - Initialization
     
-    override func initialization() {
-        super.initialization()
+    override func initialize() {
+        super.initialize()
         
         setUpLayout()
         setUpAttribute()
