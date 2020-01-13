@@ -90,7 +90,7 @@ extension AlbumHeaderView {
 
 extension AlbumHeaderView {
     private func setUpLayout() {
-        self.addSubviews(message1Label,message2Label,refreshButton)
+        self.addSubviews(message1Label, message2Label, refreshButton)
         
         message1Label.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(self.bounds.width * 4/100)
